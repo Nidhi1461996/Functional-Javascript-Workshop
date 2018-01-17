@@ -1,5 +1,5 @@
 let cnt=0;
-function duckCount(obj1,obj2) {
+function duckCount() {
   arguments = Array.prototype.slice.call(arguments);
 
   arguments.filter(function count(obj){

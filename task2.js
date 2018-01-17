@@ -1,20 +1,20 @@
 let count=0;
 function repeat(operation, num)
+{
+  // SOLUTION GOES HERE
+  if(num<=0)
   {
-      // SOLUTION GOES HERE
-      if(num<=0)
-      {
-        return count;
-      }
-      else
-      {
-        operation();
-        return repeat(operation,--num)
-      }
+    return count;
   }
+  else
+  {
+    operation();
+    return repeat(operation,--num);
+  }
+}
 function  operation()
 {
-  count++
+  count++;
 }
 
 //for positive number
@@ -26,5 +26,5 @@ count=0;
 //for 0
 console.log("checking for repeat function\t", repeat(operation,0)===0);
 
-    // Do not remove the line below
-    //module.exports = repeat
+// Do not remove the line below
+//module.exports = repeat

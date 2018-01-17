@@ -15,7 +15,7 @@ function fn(num1,num2){
   return num1+num2;
 }
 //base case
-console.log("Base Case testing\t", reduce([1,2,3,4,5],fn,0)===15);
+console.log("Base Case testing\t", reduce([1,2,3,4,5],fn,1)===16);
 
 //empty array
 console.log("testing for empty array\t", reduce([],fn,0)===0);

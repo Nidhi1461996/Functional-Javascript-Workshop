@@ -24,3 +24,6 @@ console.log("base case testing\t",duckCount(notDuck,duck,empty)===1);
 
 cnt=0;
 console.log("base case testing with two quacks\t",duckCount(notDuck,duck,empty,oneMoreDuck)===2);
+
+cnt=0;
+console.log("no arguments passed\t",duckCount()===0);

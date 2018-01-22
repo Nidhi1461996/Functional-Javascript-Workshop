@@ -8,7 +8,7 @@ function getShortMessages(arrayMessages) {
   });
 
 
-} 
+}
 
 
 let arrayObj = [ {message: "hello there!"},
@@ -17,4 +17,11 @@ let arrayObj = [ {message: "hello there!"},
 ];
 
 
-console.log("Testing the base case :", getShortMessages(arrayObj).toString()===[ "hello there!", "Whats up" ].toString());
+console.log("Testing the base case :\t", getShortMessages(arrayObj).toString()===[ "hello there!", "Whats up" ].toString());
+
+//with empty object
+arrayObj=[];
+console.log("Testing with empty array :\t", getShortMessages(arrayObj).toString()===[].toString());
+
+//check for the return type
+console.log("Testing the base case :", typeof getShortMessages(arrayObj)==="object");

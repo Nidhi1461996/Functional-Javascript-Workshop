@@ -26,6 +26,6 @@ count=0;
 //for 0
 console.log("checking for repeat function with the second argument as 0\t", repeat(operation,0)===0);
 
-console.log("without passing the second parameter\t", repeat(operation)===0);
+console.log("Without passing the second parameter\t", repeat(operation)===0);
 // Do not remove the line below
 //module.exports = repeat

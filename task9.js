@@ -5,5 +5,3 @@ function logger(namespace) {
     console.log.apply(null, [namespace].concat(slice.call(arguments)));
   };
 }
-
-module.exports = logger;

@@ -1,18 +1,14 @@
-let count=0;
+
 function repeat(operation, num) {
   if (num <= 0) return;
 
   operation();
 
 
-  if (num % 5 === 0) {
-    setTimeout(function() {
-      repeat(operation, --num);
-    });
-  } else {
+  setTimeout(function() {
     repeat(operation, --num);
-    count++;
-  }
+  });
 }
+
 
 module.exports = repeat;
